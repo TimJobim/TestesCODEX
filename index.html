@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simulador Master AOCP - Semana 2</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="game-container">
+    <div id="quiz-section">
+      <h1>Simulador Master AOCP</h1>
+      <div class="subtitle">Aprofundamento: Português, Legislação, Didática e Microbiologia</div>
+
+      <div id="progress-container">
+        <div id="progress-bar"></div>
+      </div>
+
+      <div class="quiz-meta">
+        <span id="question-counter">Questão 1 de 50</span>
+        <span>Pontuação: <span id="current-score">0</span></span>
+      </div>
+
+      <div id="question-text">Carregando pergunta...</div>
+      <div class="options-grid" id="options-container"></div>
+
+      <button id="next-btn" onclick="nextQuestion()">Próxima Questão</button>
+    </div>
+
+    <div id="score-container">
+      <h2>Missão Cumprida!</h2>
+      <p>Você finalizou o simulado de aprofundamento.</p>
+
+      <div class="stats">
+        <div class="stat-box">
+          <h3>Acertos</h3>
+          <span class="stat-correct" id="final-correct">0</span>
+        </div>
+        <div class="stat-box">
+          <h3>Erros</h3>
+          <span class="stat-wrong" id="final-wrong">0</span>
+        </div>
+        <div class="stat-box">
+          <h3>Aproveitamento</h3>
+          <span class="stat-percent" id="final-percent">0%</span>
+        </div>
+      </div>
+
+      <button id="restart-btn" onclick="location.reload()">Jogar Novamente</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
